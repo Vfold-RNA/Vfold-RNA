@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chen Research Lab | Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chen research lab, research">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headercontainer">
+            <!-- div class="figure-large"><img src="images/lab-logo.png"></div -->
+            <header class="jumbotron subhead" id="overview">
+                <p class="lead"> University of Missouri </p>
+                <h2>Computational RNA Biophysics</h2>
+            </header>
+            <!-- div class="figure-small"><a href="https://physics.missouri.edu/"><img src="images/MU_StackedMU_4C.jpg" /></a></div -->
+        </div>
+        <div class="masthead">
+            <div class="navbar">
+                <div class="navbar-inner">
+
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">Team</a></li>
+                        <li class="active"><a href="#">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="software.html">Software</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row-fluid">
+            <div class="span3 bs-docs-sidebar" id="navparent">
+                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
+                    <li><a href="#2D"> RNA 2D structure folding </a></li>
+                    <li><a href="#3D"> RNA 3D structure folding </a></li>
+                    <li><a href="#ligand"> RNA-ligand docking </a></li>
+                    <li><a href="#cas9"> CRISPR-Cas9 system </a></li>
+                    <li><a href="#dl"> RNA deep learning </a></li>
+                </ul>
+            </div>
+            <div class="span8 offset0">
+                <section id="nano">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <section id="2D">
+                                <h3>RNA 2D structure folding</h3>
+                                <br />
+                                <div style="margin-bottom: 20px;">
+                                    <img src="images/2dres.png" style="width: 95%; display: block; margin: 0 auto;" />
+                                </div>
+                                <p style="text-align:justify">The RNA folding process is often hierarchical, beginning with the formation of RNA secondary (2D) structures through base pairing. The 2D structure prediction models are hampered by the availability of thermodynamic parameters of RNA motifs. We have addressed this challenge and developed two models</p>
+                                <p style="text-align:justify"> &#8226; <a href="http://rna.physics.missouri.edu/vfold_software_download/vfold2D_download.html">Vfold2D</a> [1-4] a physics-based model that employs the statistics of known structures to compute energy parameters, enabling the prediction of 2D structures with pseudoknots and non-canonical base pairs</p>
+                                <p style="text-align:justify"> &#8226; <a href="http://rna.physics.missouri.edu/vfold_software_download/vfoldMCPX_download.html">VfoldMCPX</a> [5-6] a physics-based model designed to predict the structure of multi-strand RNA assembly.</p>
+                                <p style="text-align:justify"> These models significantly enhance the predictive capability of RNA 2D folding predictions and exhibit improved prediction accuracy. </p>
+                                <br>
+                                <ol>
+                                    <li>Y. Cheng, S. Zhang, X. Xu, and S. J. Chen. Vfold2D-MC: a physics-based hybrid model for predicting RNA secondary structure folding. J. Phys. Chem. B, 125, 10108-10118, (2021). </li>
+                                    <li> S. Cao, and S. J. Chen. Predicting structures and stabilities for H-type pseudoknots with interhelix loops. RNA, 15, 696-706, (2009).</li>
+                                    <li> S. Cao, and S. J. Chen. Predicting RNA pseudoknot folding thermodynamics. Nucleic Acids Res., 34, 2634-2652, (2006).</li>
+                                    <li> S. Cao, and S. J. Chen. Predicting RNA folding thermodynamics with a reduced chain representation model. RNA, 11, 1884-1897, (2005).</li>
+                                    <li> S. Zhang, Y. Cheng, P. Guo, S. J. Chen. VfoldMCPX: predicting multistrand RNA complexes. RNA, 28, 596-608, (2022).</li>
+                                    <li> X. Xu, and S. J. Chen. VfoldCPX server: predicting RNA-RNA complex structure and stability. PLoS One, 11, e0163454, (2016).</li>
+                                </ol>
+                                </p>
+                            </section>
+                            <br>
+                            <hr>
+                            <section id="3D">
+                                <h3>RNA 3D structure folding</h3>
+                                <br />
+                                <div style="overflow: hidden;">
+                                    <img src="images/3d.png" style="width: 95%; display: block; margin: 0 auto;" />
+                                </div>
+                                <p style="text-align:justify">
+                                    Modeling the three-dimensional (3D) structure of RNA is crucial for understanding RNA functions and for the design of RNA-based drugs and therapeutics. Our research group addresses this challenge by developing multiple RNA 3D structure prediction models, including</p> &#8226; Vfold3D [1] a motif template-based model </p>
+                                <p> &#8226; VfoldLA [2] a loop template-based model </p>
+                                <p> &#8226; <a href="http://rna.physics.missouri.edu/IsRNA/index.html"> IsRNA</a> [3-5], a model based on statistical potentials and coarse-grained molecular dynamics </p>
+                                <p style="text-align:justify"> Additionally, we developed <a href="http://rna.physics.missouri.edu/vfoldPipeline/index.html">Vfold-Pipeline</a> [6], an end-to-end, fully automated solution for RNA 3D structure modeling from a given sequence. </p>
+                                <p style="text-align:justify">These models adopt various methods and perspectives to tackle the complexities of RNA 3D folding, thereby enhancing the accuracy of RNA structure predictions.</p>
+                                <br>
+                                <ol>
+                                    <li>S. Cao, and S. J. Chen. Physics-based de novo prediction of RNA 3D structures. J. Phys. Chem. B, 115(14), 4216-4226, (2011) </li>
+                                    <li> X. Xu, and S. J. Chen. Hierarchical assembly of RNA three-dimensional structures based on loop templates. J. Phys. Chem. B, 122(21), 5327-5335, (2017).</li>
+                                    <li> D. Zhang, and S. J. Chen. IsRNA: An iterative simulated reference state approach to modeling correlated interactions in RNA folding. J. Chem. Theory Comput., 14(4), 2230-2239, (2018).</li>
+                                    <li> D. Zhang, J. Li, and S. J. Chen. IsRNA1: de novo prediction and blind screening of RNA 3D structures. J. Chem. Theory Comput., 17(3), 1842-1857, (2021). </li>
+                                    <li> D. Zhang, S. J. Chen, and R. Zhou, Modeling noncanonical RNA base pairs by a coarse-grained IsRNA2 model. J. Phys. Chem. B, 125(43), 11907-11915, (2021).</li>
+                                    <li> J. Li, S. Zhang, D. Zhang, and S. J. Chen Vfold-Pipeline: a web server for RNA 3D structure prediction from sequences. Bioinform., 38(16), 4042-4043, (2022).</li>
+                                </ol>
+                                </p>
+                            </section>
+                            <br>
+                            <hr>
+                            <section id="ligand">
+                                <h3>RNA-ligand docking</h3>
+                                <br />
+                                <div style="margin-bottom: 20px; overflow: hidden;">
+                                    <img src="images/dockres1.png" style="width: 70%; display: block; margin: 0 auto;" />
+                                </div>
+                                <div style="margin-bottom: 20px; overflow: hidden;">
+                                    <img src="images/dockres2.png" style="width: 80%; display: block; margin: 0 auto;" />
+                                </div>
+                                <p>
+                                <p style="text-align:justify">Identifying small molecules that bind RNA targets can lead to new therapeutics for diseases involving dysregulated RNA functions. Effective computational screening in this field demands robust docking software and scoring functions to predict binding modes and enable virtual screening. Our group recently developed two new tools </p>
+                                <p> &#8226; <a href="https://github.com/Vfold-RNA/RLDOCK"> RLDOCK </a>[1,2] offers an exhaustive sampling of binding sites and an accurate energy scoring </p>
+                                <p style="text-align:justify"> &#8226; <a href="https://github.com/Vfold-RNA/SPRank">SPRank </a> [3] a hybrid machine-learning and knowledge-based scoring function, enhances docking tools by sampling flexible ligands against diverse RNA structures.</p>
+                                <p style="text-align:justify">Both models have shown improved binding mode prediction and virtual screening across multiple RNA targets such as HIV-1 TAR, underscoring their potential in RNA-targeted drug discovery.</p>
+                                <br>
+                                <ol>
+                                    <li> L. Z. Sun, Y. W. Jiang, Y. Z. Zhou, and S. J. Chen, RLDOCK: A new method for predicting RNA-ligand interactions. J. Chem. Theory Comput., 16, 7173-7183, (2020).</li>
+                                    <li> Y. W. Jiang, and S. J. Chen, RLDOCK method for predicting RNA-small molecule binding modes. Methods., 197, 97-105, (2022).</li>
+                                    <li> Y. Z. Zhou, Y. W. Jiang, and S. J. Chen, SPRank - A knowledge-based scoring function for RNA-ligand pose prediction and virtual screening. J. Chem. Theory Comput., 20, 7358-7369, (2004).</li>
+                                </ol>
+                                </p>
+                            </section>
+                            <br>
+                            <hr>
+                            <section id="cas9">
+                                <h3>CRISPR-Cas9 system</h3>
+                                <br />
+                                <div style="margin-bottom: 20px; overflow: hidden;">
+                                    <img src="images/crisprres.png" style="width: auto; display: block; margin: 0 auto;" />
+                                </div>
+                                <p style="text-align:justify">
+                                    The CRISPR/Cas9 nuclease system is a transformative technology for genome engineering, and its success hinges on the strategic design of guide RNAs (gRNAs) to precisely control on- and off-target cleavage efficiencies. To address this challenge, we developed two computational models built on the underlying physical principles of CRISPR gene editing.</p>
+                                <p> &#8226; <a href="http://rna.physics.missouri.edu/uCRISPR/index.html">uCRISPR </a> [1] model leverages integrated energy parameters to evaluate R-loop folding stability.
+                                <p style="text-align:justify"> &#8226; kCRISPR [2] model applies kinetic Monte Carlo simulations to capture R-loop folding/unfolding kinetics and employs a supervised ensemble learning algorithm to pinpoint key determinants of cleavage efficiency.</p>
+                                <p style="text-align:justify">Together, these models provide promising tools to accurately predict and optimize gRNA performance at both on- and off-target sites.</p>
+
+                                <br>
+                                <ol>
+                                    <li> Zhang D, Hurst T, Duan D, Chen SJ. Unified energetics analysis unravels SpCas9 cleavage activity for optimal gRNA design. Proceedings of the National Academy of Sciences. 2019 Apr 30;116(18):8693-8. </li>
+                                    <li> Jin L, Liyanage R, Duan D, Chen SJ. Machine learning-inferred and energy landscape-guided analyses reveal kinetic determinants of CRISPR/Cas9 gene editing. bioRxiv. 2024:2024-04.</li>
+                                    </p>
+                            </section>
+                            <br>
+                            <hr>
+                            <section id="dl">
+                                <h3>RNA deep learning</h3>
+                                <br />
+                                <div style="margin-bottom: 20px; overflow: hidden;">
+                                    <img src="images/dlres.png" style="width: 80%; display: block; margin: 0 auto;" />
+                                </div>
+                                <p style="text-align:justify">
+                                    Metal ions are critical for RNA structure and function, but accurately modeling metal ion (e.g., Mg²⁺) effects remains a major challenge. Our group previously developed statistical mechanics-based models to account for ion correlation and fluctuations in nucleic acids: TBI [1] and MCTBI [2,3].
+                                <p style="text-align:justify"> Building on this, we recently developed a deep learning method,
+                                    <a href="https://github.com/Vfold-RNA/MgNet">MgNet</a> which treats RNA-ion complexes as images and predicts Mg²⁺ binding sites that are tightly coordinated with RNA atoms. MgNet identifies critical atoms for inner/outer-sphere coordination and uncovers new ion-binding motifs. This model can complement X-ray crystallography for precise metal ion site identification.
+                                </p>
+                                <br>
+                                <ol>
+                                    <li> Z. J. Tan, and S. J. Chen, Electrostatic correlations and fluctuations for ion binding to a finite length polyelectrolyte. J. Chem. Phys., 122, 44903, (2005). </li>
+                                    <li> L. Z. Sun, and S. J. Chen, Monte Carlo Tightly Bound Ion Model: Predicting Ion-Binding Properties of RNA with Ion Correlations and Fluctuations. J. Chem. Theory Comput., 12, 3370–3381, (2016). </li>
+                                    <li> L. Z. Sun, J. X. Zhang, and S. J. Chen, MCTBI: a web server for predicting metal ion effects in RNA structures. RNA., 23, 1155–1165, (2017).</li>
+                                    <li> Y. Z. Zhou, and S. J. Chen, Graph deep learning locates magnesium ions in RNA. QRB Discov., 3, E20, (2022).</li>
+                                </ol>
+                            </section>
+                            <hr>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span4">
+                        <a href="https://physics.missouri.edu/"><img src="images/MU_UnitSig_PhysicsandAstronomy_rgb_std_vert.png" width="400" /></a>
+                    </div>
+                    <div class="span4">
+                        <a href="https://muidsi.missouri.edu/"><img src="images/bioinfo_processed.png" width="400" /></a>
+                    </div>
+                    <div class="span4">
+                        <a href="https://cafnr.missouri.edu/divisions/biochemistry/"><img src="images/biochem.png" width="400" /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Le javascript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(document.body).scrollspy({
+                    target: "#navparent"
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-12611547-1");
+                pageTracker._trackPageview();
+            } catch (err) {}
+        </script>
+
+        <!-- Start of StatCounter Code -->
+        <script type="text/javascript">
+            var sc_project = 5612792;
+            var sc_invisible = 1;
+            var sc_partition = 63;
+            var sc_click_stat = 1;
+            var sc_security = "a93c2e7b";
+        </script>
+
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript>
+            <div class="statcounter"><a title="myspace visitor tracker" href="http://www.statcounter.com/myspace/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/5612792/0/a93c2e7b/1/" alt="myspace visitor tracker"></a></div>
+        </noscript>
+        <!-- End of StatCounter Code -->
+
+</body>
+
+</html>
